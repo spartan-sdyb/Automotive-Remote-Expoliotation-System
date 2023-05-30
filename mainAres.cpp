@@ -3,13 +3,13 @@
 #include "<iostream>"
 
 bool FlyingPig() {
-	std::string aircraftInfo = faAPI.getAircraftInfo("FLIGHT_ID");
-	double distance = faAPI.calculateDistance(lat1, lon1, lat2, lon2);
+    std::string aircraftInfo = faAPI.getAircraftInfo("FLIGHT_ID");
+    double distance = faAPI.calculateDistance(lat1, lon1, lat2, lon2);
 
 
 }
 int gps() {
-    const char* serialPort = "/dev/ttyTHS1"; 
+    const char* serialPort = "/dev/ttyTHS1";
 
     SIM808_GPS gps(serialPort);
 
